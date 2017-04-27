@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="WebApp">
+	<head>
+		<title>Affinity test</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<link rel="stylesheet" type="text/css" href="assets/external/bootstrap/css/bootstrap.min.css" />
+		<!-- production -->
+		<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
+
+		<!-- development: used only if the web server knows text/less mime type - otherwise use less compiler to generate css files -->
+		<link rel="stylesheet/less" type="text/less" href="assets/css/style.less" />
+	</head>
+	<body>
+		<div ng-view></div>
+
+		<script src="assets/external/jquery-2.2.3.min.js"></script>
+		<script src="assets/external/bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- development: used only if the web server knows text/less mime type -->
+		<script src="assets/external/less.min.js"></script>
+
+		<script src="assets/external/angular/angular.min.js"></script>
+		<script src="assets/external/angular/angular-route.min.js"></script>
+		<script src="assets/external/angular/angular-local-storage.min.js"></script>
+		<script src="assets/external/ui-bootstrap-1.3.2.min.js"></script>
+		<script src="assets/external/bootstrap-select-1.12.2/js/bootstrap-select.js"></script>
+
+		<script src="app/init.js"></script>
+		
+		<script src="controllers/homepage.js"></script>
+		
+		<script src="directives/header.js"></script>
+		<script src="directives/page-content.js"></script>
+		<script src="directives/footer.js"></script>
+		
+		<script src="services/affinity-services.js"></script>
+		
+		<script src="app/routes.js"></script>
+	</body>
+</html>
