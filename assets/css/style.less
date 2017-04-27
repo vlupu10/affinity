@@ -41,6 +41,23 @@ body {
   }
 }
 
+@media (min-width: 1000px) {
+  .ft-mobile {
+    display: none!important;
+  }
+  .ft-desktop {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  .ft-desktop {
+    display: none!important;
+  }
+  .ft-mobile {
+    display: block;
+  }
+}
+
 .floatR {
 	float: right;
 }
@@ -58,9 +75,9 @@ body {
     height: 60px;
 }
 .logo-mobile {
-    width: 40px;
-    height: 40px;
-	margin: auto;
+    width: 216px;
+    height: 60px;
+	margin: 20px;
 }
 
 .uppercase {
@@ -78,7 +95,7 @@ body {
 	color: #c8e4fb;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1000px) {
 	.footer {
 		line-height: 40px;
 		.ft-menu {
@@ -87,7 +104,7 @@ body {
 		}
 	}
 }
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
 	.footer {
 		text-align: center;
 		div {
@@ -96,10 +113,27 @@ body {
 	}
 }
 
+.ft-ctn {
+	background-color: #001420;
+}
+
+/*@media (max-width: 1000px) {
+	.footer {
+		text-align: center;
+		div div div {
+			margin:auto;
+		}
+		.ft-menu {
+			display: none;
+		}
+		
+	}
+}
+*/
 .side-nav-container {
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	right: 0px;
 	z-index: 1000;
 	width: 100%;
 }
@@ -142,25 +176,42 @@ body {
 	padding-top: 10px;
 	font-size: 11px;
 }
-div[page-content] {
-	overflow-y: auto;
-	.dk-container {
-		width:100%;
-		.dk-in-container {
-			background-color: #f0f2ff;
+
+.sv-img {
+	background-image: url(../../assets/images/services.jpg);
+	background-size: calc(100vw) calc(24vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+	height: 218px;
+}
+
+.dk-container {
+	background-color: #FFFFFF;
+	padding-left: 150px;
+	padding-right: 150px;
+	.dk-in-container {
+		background-color: #f0f2ff;
+		margin: auto;
+		.img-services {
 			width: 1300px;
-			margin: auto;
-			.img-services {
-				width: 1300px;
-				height: 218px;
-			}
-			.img-ct {
-				width: 300px;
-				height: 190px;
-			}
+			height: 218px;
+		}
+		.img-ct {
+			width: 300px;
+			height: 190px;
 		}
 	}
 }
+
+@media (max-width: 1420px) {
+	.dk-container {
+		background-color: #FFFFFF;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
 .content-links {
 	display: block;
 	font-size: 14px;
@@ -177,6 +228,37 @@ div[page-content] {
 	font-size: 13px;
 	margin-left: -15px;
 	div {
-		padding-left: 15px;
+		padding: 10px;
 	}
 }
+
+@media (max-width: 1000px) {
+	.content-right {
+		div {
+			padding: 20px;
+		}
+	}
+
+}
+.side-nav-container {
+	top: 0px;
+    right: 0px;
+	.nav-side-menu {
+		.menu-list {
+			width: 200px;
+			#menu-content {
+				//background-color: #FFFFFF;
+			}
+		}
+		.brand {
+			background-color: #d3e3ff;
+		}
+		background-color: #d3e3ff;
+		i.fa-bars {
+			left: unset;
+			right: 15px;
+    		top: 2px;
+		}
+	}
+}
+
