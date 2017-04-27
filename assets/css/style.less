@@ -1,0 +1,144 @@
+// import font-awesome
+@import "../fonts/less/animated.less";
+@import "../fonts/less/bordered-pulled.less";
+@import "../fonts/less/core.less";
+@import "../fonts/less/fixed-width.less";
+@import "../fonts/less/font-awesome.less";
+@import "../fonts/less/icons.less";
+@import "../fonts/less/list.less";
+@import "../fonts/less/mixins.less";
+@import "../fonts/less/path.less";
+@import "../fonts/less/rotated-flipped.less";
+@import "../fonts/less/screen-reader.less";
+@import "../fonts/less/stacked.less";
+@import "../fonts/less/variables.less";
+// import selectpicker
+@import "../external/bootstrap-select-1.12.2/less/bootstrap-select.less";
+@import "../external/bootstrap-select-1.12.2/less/variables.less";
+// import nav-side-menu
+@import "nav-side-menu.less";
+
+body {
+	padding: 0px;
+	overflow-x: hidden;
+	font-size: 10px;
+}
+
+@media (min-width: 1000px) {
+  .mobile {
+    display: none!important;
+  }
+  .desktop {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  .desktop {
+    display: none!important;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+.floatR {
+	float: right;
+}
+
+.header {
+	font-size: 12px;
+	background-color: #d3e3ff;
+}
+.header-mobile {
+	font-size: 10px;
+}
+
+.logo {
+    width: 216px;
+    height: 60px;
+}
+.logo-mobile {
+    width: 40px;
+    height: 40px;
+	margin: auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.header {
+}
+
+.footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 12px;
+	background-color: #001420;
+	color: #c8e4fb;
+}
+
+@media (min-width: 1000px) {
+	.footer {
+		line-height: 40px;
+		.ft-menu {
+			margin-top: 6px;
+			line-height: 34px;
+		}
+	}
+}
+@media (max-width: 1000px) {
+	.footer {
+		text-align: center;
+		div {
+			line-height: 28px;
+		}
+	}
+}
+
+.side-nav-container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	width: 100%;
+}
+
+.nav {
+	margin-top: 4px;
+	li {
+		height: 54px;
+		padding: 10px 2px 10px 2px;
+		border: none;
+		a {
+			border: none;
+			color: #333;
+		}
+	}
+	li.active a {
+		border: none;
+	}
+}
+
+.nav-tabs {
+	border: none;
+}
+
+
+/* new */
+
+.footer-links {
+	color: #c8e4fb;
+}
+
+.dsp-bk {
+	display: block;
+	height: 18px;
+}
+.end {
+	height: 30px;
+	background-color: #d3e3ff;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 11px;
+}
