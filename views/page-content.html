@@ -1,68 +1,48 @@
-<div class="row">
-    <div class="col-xs-12 col-md-12">
-        <!-- <div class="spacer-brown"></div> -->
-        <div class="city desktop"></div>
-        <div class="city-mobile mobile"></div>
-    </div>
-</div>
-<div class="row">
-	<div class="col-md-3">
+<div class="dk-container">
+	<div class="dk-in-container">
+		<div class="sv-img"></div>
 		<div class="row">
-			<div class="col-md-12 dd-container desktop">
+			<div class="col-md-2 content-left">
+				<a class="uppercase content-links" href="#">Services</a>
+				<a class="uppercase content-links" href="#">Air delivery</a>
+				<a class="uppercase content-links" href="#">Ground shipping</a>
+				<a class="uppercase content-links" href="#">Sea delivery</a>
+			</div>
+			<div class="col-md-10 content-right">
+				<div>
 				<div class="row">
-					<div class="col-md-offset-6 col-md-6">
-						<select type="text" id="scroll-down" class="form-control floatR scr-down" title="SCROLL DOWN">
-							<option value="golf">GOLF</option>
-							<option value="tennis">TENNIS</option>
-						</select>
+					<div class="col-md-12">
+						<h2 class="uppercase">What We Do</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
 					</div>
 				</div>
-			</div>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="assets/images/air_delivery.jpg" class="img-ct">
+						<h3>Air delivery</h3>
+						<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.							
+						</p>
+					</div>
+					<div class="col-md-4">
+						<img src="assets/images/ground_shipping.jpg" class="img-ct">
+						<h3>Ground shipping</h3>
+						<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.							
+						</p>
+					</div>
+					<div class="col-md-4">
+						<img src="assets/images/sea_delivery.jpg" class="img-ct">
+						<h3>Sea delivery</h3>
+						<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.							
+						</p>
+					</div>
+				</div>
+				</div>
+			</div>			
 		</div>
 	</div>
-</div>
-<div class="row">
-    <div class="col-xs-12 col-md-12">
-        <div class="city city-content desktop">
-        	<div class="row">
-        		<div class="col-md-offset-3 col-md-3">
-        			<div class="blog-title">
-        				<span class="blog-bold">// Our</span>blog
-        			</div>
-        			<hr class="blog-separator" />
-		        	<div class="blog-list blog-scroll">
-		        		<div ng-repeat="blog in blogs">
-		        			<span class="redir ellipsis" title="{{blog.title}}" 
-		        			    ng-click="callComments($event)"
-		        			    data-id="{{blog.id}}">
-		        				{{blog.title}}
-		        			</span>
-		        		</div>
-		        	</div>
-        		</div>
-        		<div class="col-md-3">
-        			<img src="assets/images/thea.png" class="blog-list img">
-        		</div>
-        	</div>
-        </div>
-        <div class="city city-content-mobile mobile">
-        	<div class="row">
-        		<div class="col-xs-12">
-	        		<div class="pad">
-	        			<div class="blog-title">
-	        				<span class="blog-bold">// Our</span>blog
-	        			</div>
-	        			<hr class="blog-separator" />
-			        	<div class="blog-list">
-			        		<div ng-repeat="blog in blogs">
-			        			<span class="redir ellipsis" title="{{blog.title}}" ng-click="callComments($event)" data-id="{{blog.id}}">
-			        				{{blog.title}}
-			        			</span>
-			        		</div>
-			        	</div>
-	        		</div>
-	        	</div>
-    		</div>
-        </div>
-    </div>
 </div>
